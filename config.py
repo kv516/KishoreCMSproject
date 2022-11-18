@@ -6,11 +6,11 @@ class Config(object):
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'secret-key'
 
     BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT') or 'tscmsstorage'
-    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'o7dUAdmqPbcDDeUWBFOXC9PfAJrb5rQemADk7G5DdnC7l59iVY82oBzrC0eO1rlcjUzgKuMCzyVy+AStpQW+Yg=='
+    BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY') or 'c/3XWQ5bnPm1wDveO11rNx8DaOnaT/c9Tito9z9RvSGhNWZCGwkDjXL731s8Fk1cWN32UYWoB7NP+AStfzSS9w=='
     BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER') or 'images'
 
-    SQL_SERVER = os.environ.get('SQL_SERVER') or 'sqlserverts.database.windows.net'
-    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'tssqldb'
+    SQL_SERVER = os.environ.get('SQL_SERVER') or 'tscmsserver.database.windows.net'
+    SQL_DATABASE = os.environ.get('SQL_DATABASE') or 'tscmsdb'
     SQL_USER_NAME = os.environ.get('SQL_USER_NAME') or 'kishoreadmin'
     SQL_PASSWORD = os.environ.get('SQL_PASSWORD') or 'Summer@123456'
     # Below URI may need some adjustments for driver version, based on your OS, if running locally
@@ -19,7 +19,7 @@ class Config(object):
 
     ### Info for MS Authentication ###
     ### As adapted from: https://github.com/Azure-Samples/ms-identity-python-webapp ###
-    CLIENT_SECRET = "hmA8Q~KNK6Iy2KLZvmydERWv~GxVbuzydTl4oanx"
+    CLIENT_SECRET = "z0h8Q~SkhFsnZTp3ApXauocX3cLOq5hJfAXH3awL"
     # In your production app, Microsoft recommends you to use other ways to store your secret,
     # such as KeyVault, or environment variable as described in Flask's documentation here:
     # https://flask.palletsprojects.com/en/1.1.x/config/#configuring-from-environment-variables
@@ -30,9 +30,9 @@ class Config(object):
     AUTHORITY = "https://login.microsoftonline.com/common"  # For multi-tenant app, else put tenant name
     # AUTHORITY = "https://login.microsoftonline.com/Enter_the_Tenant_Name_Here"
 
-    CLIENT_ID = "813e79f2-4929-4c43-b504-853a67dd6751"
+    CLIENT_ID = "fb98d01b-6148-47f6-8211-91580f70db99"
 
-    REDIRECT_PATH = "/redui"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
+    REDIRECT_PATH = "/tsredui"  # Used to form an absolute URL; must match to app's redirect_uri set in AAD
 
     # You can find the proper permission names from this document
     # https://docs.microsoft.com/en-us/graph/permissions-reference
